@@ -22,6 +22,7 @@ This docker image uses standard docker logging. To view the logs use:
 
 	docker logs <container>
 
+
 ## Additional Information
 Dockerhub repository: [midlan6/duckdns-minimalistic](https://hub.docker.com/r/midlan6/duckdns-minimalistic/)
 
