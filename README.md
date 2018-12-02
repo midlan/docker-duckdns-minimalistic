@@ -4,7 +4,7 @@ Minimalistic docker image for dynamic DNS provided e.g. by [duckdns.org][duckdns
 
 ## Brief
 
-The goal of this repository is to create minimalistic docker image for updating DNS records of [duckdns.org][duckdns]. The `Dockerfile` is based on alpine without any other dependencies, so the result image should be about the same size as the alpine image.
+The goal of this repository is to create minimalistic docker image for updating DNS records of [duckdns.org][duckdns]. The `Dockerfile` is based on busybox without any other dependencies, so the result image should be about the same size as the busybox image (much smaller than e.g. alpine).
 
 ## Usage
 
