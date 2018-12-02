@@ -1,6 +1,6 @@
 FROM busybox:latest
 
-COPY entrypoint.sh /app/
+COPY ./entrypoint.sh /usr/local/bin/entrypoint
 
-ENTRYPOINT ["/app/entrypoint.sh"]
+ENTRYPOINT ["entrypoint"]
 
