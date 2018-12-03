@@ -9,5 +9,5 @@ before_install:
         - ./tests/TestHTTP.sh
 
 script:
-        - wget -O - -q --post-data=trigger "$DOCKERHUB_TRIGGER_URL" > /dev/null 2>&1
+        - wget -O - -q --post-data='build=true' "$DOCKERHUB_TRIGGER_URL" 2>/dev/null
 
