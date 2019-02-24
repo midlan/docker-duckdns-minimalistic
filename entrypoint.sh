@@ -1,5 +1,7 @@
 #!/bin/sh
 
+trap "exit 0" SIGINT SIGTERM
+
 DUCKDNS_INTERVAL=${DUCKDNS_INTERVAL:-300} # default update interval is 300 seconds (5 minutes)
 DUCKDNS_TIMEOUT=${DUCKDNS_TIMEOUT:-10} # default timeout is 10 seconds
 
