@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/midlan/docker-duckdns-minimalistic.svg?branch=master)](https://travis-ci.org/midlan/docker-duckdns-minimalistic)
 # docker-duckdns-minimalistic
 
 Minimalistic docker image for dynamic DNS provided e.g. by [duckdns.org][duckdns]
