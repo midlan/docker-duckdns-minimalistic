@@ -10,7 +10,7 @@ The goal of this repository is to create minimalistic docker image for updating 
 
 ### Start container
 
-    docker run -d --name duckdns --restart always \
+    docker run -d --name duckdns --restart unless-stopped \
 		-e DUCKDNS_URL='https://www.duckdns.org/update?domains=exampledomain&token=a7c4d0ad-114e-40ef-ba1d-d217904a50f2' \
 		-e DUCKDNS_INTERVAL=300 \
 		-e DUCKDNS_TIMEOUT=10 \
@@ -36,7 +36,7 @@ This docker image uses standard docker logging. To view the logs use:
         duckdns:
             container_name: duckdns
             image: midlan6/duckdns-minimalistic
-            restart: always
+            restart: unless-stopped
             environment:
                 - DUCKDNS_URL=https://www.duckdns.org/update?domains=exampledomain&token=a7c4d0ad-114e-40ef-ba1d-d217904a50f2
                 - DUCKDNS_INTERVAL=300
